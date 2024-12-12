@@ -1,0 +1,147 @@
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    flex-direction: column;
+    font-family:'Trebuchet MS';
+    background-size: cover;
+    height: 100vh;
+    margin: 0;
+    background-color: rgb(241, 240, 240);
+}
+
+#main{
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    text-align: center;
+    flex-direction: column;
+    background-color: white;
+    width: 60%;
+    border: 2px solid black;
+    border-radius: 20px;
+}
+
+.btn{
+  background-color: rgba(14,100,209,255);
+  color: white;
+  height: 46px;
+  width: 143px;
+  border: none;
+  font-size: 21px;
+  border-radius: 12px;
+  margin: 0 9%;
+}
+
+.btn:active {
+  transform: scale(0.995);
+  background-color: rgba(14,87,209,255); 
+}
+
+#skip{
+  background-color: rgb(225, 28, 28);
+  margin-top: 2%;
+}
+
+#card{
+  margin: 4% 0 4% 0;
+  width: 90%;
+  height: 370px;
+  display: flex;
+  align-items: center; 
+  justify-content: center;
+  border-radius: 20px;
+  box-shadow: 0px 0px 12px grey;
+}
+
+#right{
+  color: green; 
+} 
+
+#wrong{
+  color: red; 
+} 
+
+#statistics{
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+}
+
+#user_input{
+  height: 26px;
+  width: 340px;
+  margin: 2%;
+  font-size: 22px;
+  border-radius: 4px;
+  border: 2px solid black;
+}
+
+#count{
+  margin: 0;
+}
+
+
+@media (max-width: 1500px) {
+  h1{
+    font-size: 26px;
+  }
+
+  #main{
+    width: 75%;
+}
+
+}
+
+@media (max-width: 1000px) {
+  h1{
+    font-size: 26px;
+  }
+
+  #main{
+    width: 90%;
+}
+
+}
+
+.modal {
+  display: flex;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.55);
+  justify-content: center;
+  align-items: center;
+}
+
+.modal-content {
+  background-color: white;
+  padding: 25px;
+  border-radius: 15px;
+  text-align: center;
+  width: 30%;
+
+  display: flex;
+
+  align-items: center;
+  flex-direction: column;
+}
+
+#radio_btns{
+  text-align: left;
+}
+
+label{
+  font-size: 20px;
+
+}
+
+#select_level{
+  margin-top: 60px;
+}
+
+#error{
+  color: red;
+}

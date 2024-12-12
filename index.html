@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <title>Лабораторна робота 11</title>
+    <link rel="icon" href="icon.png">
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id = "main">  
+        <div id = "card">
+            <h1 id = "word"></h1>
+        </div>          
+        <h1 id = "count">1/10</h1>       
+        <input type="text" id = "user_input" placeholder="Введіть переклад слова:">
+        <input type="button" value="Перевірити" class = "btn" id = "check">
+        <input type="button" value="Пропустити" class = "btn" id = "skip">
+        <div id = "statistics">
+            <div id = "right">
+                <h1>Правильно</h1>
+                
+                <h1 id = "right_value">0</h1>
+            </div>      
+            <div id = "wrong">
+                <h1>Неправильно</h1>
+                <h1 id = "wrong_value">0</h1>     
+            </div>
+        </div>
+    </div>
+	
+    <div id="modal" class="modal">
+        <div class="modal-content">      
+            <h1>Оберіть рівень складності:</h1>
+            <div id = "radio_btns">
+                <input type="radio" id="choice1" name="level" value="beginner">
+                <label for="choice1">Початковий</label>
+                <br>
+                <input type="radio" id="choice2" name="level" value="intermediate">
+                <label for="choice2">Середній</label>
+                <br>
+                <input type="radio" id="choice3" name="level" value="advanced">
+                <label for="choice3">Продвинутий</label>
+              </div>
+              <h3 id = "error"></h3>
+            <input class = "btn" type = "button" value = "Обрати" id = "select_level">
+        </div>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src = "script.js"></script>
+</body>
+</html>
